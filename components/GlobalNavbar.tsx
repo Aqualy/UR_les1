@@ -9,20 +9,34 @@ export default function GlobalNavbar() {
 
   return (
     <>
-      {/* Hamburger menu icon button */}
-      <button
-        className="fixed top-4 left-4 z-50 p-2 text-gray-700 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 rounded"
-        onClick={() => setIsSidebarOpen(true)}
-      >
-        <GiHamburgerMenu size={24} />
-      </button>
+      {/* Top navbar */}
+      <header className="fixed top-0 left-0 right-0 z-40 flex items-center justify-between px-6 py-4 bg-white border-b">
+        <nav className="hidden md:flex space-x-6">
+          <a href="/home" className="hover:underline">Home</a>
+          <a href="/about" className="hover:underline">About</a>
+          <a href="/project" className="hover:underline">Project</a>
+          <a href="/contact" className="hover:underline">Contact</a>
+          <a href="/login" className="hover:underline">Login</a>
+        </nav>
 
-      {/* SidebarSlider component */}
-      <SidebarSlider isOpen={isSidebarOpen} onClose={() => setIsSidebarOpen(false)}>
+        {/* Hamburger for mobile */}
+        <button
+          className="md:hidden p-2 text-gray-700 focus:outline-none"
+          onClick={() => setIsSidebarOpen(true)}
+        >
+          <GiHamburgerMenu size={24} />
+        </button>
+      </header>
+
+      {/* Mobile sidebar */}
+      <SidebarSlider
+        isOpen={isSidebarOpen}
+        onClose={() => setIsSidebarOpen(false)}
+      >
         <nav className="flex flex-col space-y-4">
           <a href="/home" className="hover:underline">Home</a>
           <a href="/about" className="hover:underline">About</a>
-          <a href="/about" className="hover:underline">Project</a>
+          <a href="/project" className="hover:underline">Project</a>
           <a href="/contact" className="hover:underline">Contact</a>
           <a href="/login" className="hover:underline">Login</a>
         </nav>

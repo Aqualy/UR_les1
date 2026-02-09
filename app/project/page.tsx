@@ -1,19 +1,40 @@
+'use client';
+
+import { ClickableImage } from '@/components/ImageModal';
+
 export default function AboutPage() {
   return (
-    <div className="max-w-4xl mx-auto space-y-6">
-      <h1 className="text-3xl font-bold">About Us</h1>
-      <p className="text-gray-700">
-        We are a company dedicated to providing the best solutions for your needs. 
-        Our team is passionate about creating modern, scalable, and user-friendly applications.
-      </p>
-      <ul className="list-disc pl-5 text-gray-700 space-y-2">
-        <li>Innovative technology</li>
-        <li>Professional team</li>
-        <li>Customer satisfaction</li>
-      </ul>
-      <p> 
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, commodi ducimus aperiam omnis voluptatibus voluptates nam nihil quis tempore corporis quidem fugit delectus nostrum animi illo debitis reprehenderit quos ullam!
-      </p>
+    <div className="max-w-4xl mx-auto space-y-8 px-4 pb-24 pt-24">
+      <div className="space-y-2">
+        <h1 className="text-4xl font-bold text-gray-900">Projects</h1>
+        <p className="text-gray-600">
+          A selection of projects made through study and personal work.
+        </p>
+      </div>
+
+      <div className="space-y-10">
+        <div className="space-y-3">
+          <h2 className="text-xl font-semibold text-gray-900">Postcard</h2>
+          <div className="w-48">
+            <ClickableImage src="/Postcard.jpg" alt="Postcard" />
+          </div>
+        </div>
+
+        <div className="space-y-3">
+          <h2 className="text-xl font-semibold text-gray-900">Leporello</h2>
+          <div className="flex flex-col gap-6">
+            <ClickableImage src="/leporello_page-0001.jpg" alt="leporello page 1" />
+            <ClickableImage src="/leporello_page-0002.jpg" alt="leporello page 2" />
+          </div>
+        </div>
+
+        <div className="space-y-3">
+          <h2 className="text-xl font-semibold text-gray-900">Poster</h2>
+          <div className="w-full max-w-2xl">
+            <ClickableImage src="/2425_XDL2_BaertenT_opdr1_posterLres_page-0001.jpg" alt="Poster" />
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
