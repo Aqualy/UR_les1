@@ -16,22 +16,22 @@ export default function AboutPage() {
         <div className="space-y-3">
           <h2 className="text-xl font-semibold text-gray-900">Postcard</h2>
           <div className="w-48">
-            <ClickableImage src="/Postcard.jpg" alt="Postcard" />
+            <ClickableImage src="/Postcard.webp" alt="Postcard" />
           </div>
         </div>
 
         <div className="space-y-3">
           <h2 className="text-xl font-semibold text-gray-900">Leporello</h2>
           <div className="flex flex-col gap-6">
-            <ClickableImage src="/leporello_page-0001.jpg" alt="leporello page 1" />
-            <ClickableImage src="/leporello_page-0002.jpg" alt="leporello page 2" />
+            <ClickableImage src="/leporello_page-0001.webp" alt="leporello page 1" />
+            <ClickableImage src="/leporello_page-0002.webp" alt="leporello page 2" />
           </div>
         </div>
 
         <div className="space-y-3">
           <h2 className="text-xl font-semibold text-gray-900">Poster</h2>
           <div className="w-full max-w-2xl">
-            <ClickableImage src="/2425_XDL2_BaertenT_opdr1_posterLres_page-0001.jpg" alt="Poster" />
+            <ClickableImage src="/2425_XDL2_BaertenT_opdr1_posterLres_page-0001.webp" alt="Poster" />
           </div>
         </div>
       </div>
